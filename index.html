@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/favicon.svg">
+  <title>CareKart – Online Pharmacy & Lab Tests</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="CareKart logo" height="40"/></a>
+    <form class="search" onsubmit="return goSearch(event)">
+      <input id="searchInput" placeholder="Search medicines…" />
+      <button class="btn">Search</button>
+    </form>
+    <nav class="nav__links">
+      <a href="lab-tests.html">Lab Tests</a>
+      <a href="upload-rx.html">Upload Rx</a>
+      <a href="cart.html">Cart <span id="cartCount" class="pill">0</span></a>
+      <a id="authLink" href="login.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container">
+  <div class="hero__text">
+    <h1>Flat 20% OFF on Medicines</h1>
+    <p>Shop genuine medicines and book lab tests at home. Fast delivery and transparent pricing.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="products.html">Shop Medicines</a>
+      <a class="btn" href="lab-tests.html">Book Lab Tests</a>
+    </div>
+  </div>
+  <div class="hero__art">
+    <img src="assets/hero.svg" alt="Illustration" />
+  </div>
+</section>
+
+<section class="container mt-6">
+  <h2 class="section-title">Top Sellers</h2>
+  <div id="topSellers" class="cards"></div>
+</section>
+
+<footer class="footer">
+  <div class="container grid-3">
+    <div><h4>CareKart</h4><p>Your friendly online pharmacy & lab partner.</p></div>
+    <div><h4>Useful Links</h4><ul class="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lab-tests.html">Book Lab Tests</a></li>
+      <li><a href="upload-rx.html">Upload Prescription</a></li>
+      <li><a href="orders.html">My Orders</a></li>
+    </ul></div>
+    <div><h4>Contact</h4><p>Email: support@carekart.example</p><p>Phone: +91-90000-00000</p></div>
+  </div>
+  <div class="container footer__bottom"><small>© <span id="yr"></span> CareKart. Demo only.</small></div>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear()</script>
+</body>
+</html>

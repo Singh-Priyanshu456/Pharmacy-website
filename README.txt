@@ -1,0 +1,1 @@
+Client data is fetched from the server API.

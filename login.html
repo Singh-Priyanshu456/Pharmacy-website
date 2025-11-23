@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" href="assets/favicon.svg"><title>Login</title>
+  <link rel="stylesheet" href="styles.css"/><script defer src="app.js"></script>
+</head><body>
+<header class="nav"><div class="container nav__inner">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" height="40"/></a>
+  <nav class="nav__links"><a href="lab-tests.html">Lab Tests</a><a href="upload-rx.html">Upload Rx</a><a href="cart.html">Cart <span id="cartCount" class="pill">0</span></a><a id="authLink" href="login.html">Login</a></nav>
+</div></header>
+<main class="container auth">
+  <form class="card auth__form" onsubmit="return doLogin(event)">
+    <h2>Login</h2>
+    <input id="email" type="email" required placeholder="Email"/>
+    <input id="password" type="password" required placeholder="Password"/>
+    <button class="btn btn--primary">Login</button>
+    <p>New here? <a href="register.html">Create an account</a></p>
+  </form>
+</main>
+<footer class="footer"><div class="container footer__bottom"><small>© <span id="yr"></span> CareKart</small></div></footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body></html>

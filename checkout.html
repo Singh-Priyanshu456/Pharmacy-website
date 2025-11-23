@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" href="assets/favicon.svg"><title>Checkout</title>
+  <link rel="stylesheet" href="styles.css"/><script defer src="app.js"></script>
+</head><body>
+<header class="nav"><div class="container nav__inner">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" height="40"/></a>
+  <nav class="nav__links"><a href="lab-tests.html">Lab Tests</a><a href="upload-rx.html">Upload Rx</a><a href="cart.html">Cart <span id="cartCount" class="pill">0</span></a><a id="authLink" href="login.html">Login</a></nav>
+</div></header>
+<main class="container">
+  <h1>Checkout</h1>
+  <form class="checkout" onsubmit="return placeOrder(event)">
+    <fieldset><legend>Delivery Address</legend>
+      <input required id="addrName" placeholder="Full name"/>
+      <input required id="addrPhone" placeholder="Phone number"/>
+      <textarea required id="addrLine" placeholder="Address line"></textarea>
+      <div class="grid-2"><input required id="addrCity" placeholder="City"/><input required id="addrPincode" placeholder="Pincode"/></div>
+    </fieldset>
+    <fieldset><legend>Payment</legend>
+      <label><input type="radio" name="pay" value="cod" checked/> Cash on Delivery</label>
+      <label><input type="radio" name="pay" value="upi"/> UPI</label>
+      <label><input type="radio" name="pay" value="card"/> Card</label>
+    </fieldset>
+    <button class="btn btn--primary">Place Order</button>
+  </form>
+</main>
+<footer class="footer"><div class="container footer__bottom"><small>© <span id="yr"></span> CareKart</small></div></footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body></html>

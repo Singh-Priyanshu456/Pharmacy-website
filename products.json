@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "paracetamol-650",
+    "name": "Paracetamol 650 mg",
+    "brand": "CareKart Essentials",
+    "price": 49.0,
+    "mrp": 65.0,
+    "pack_size": "15 tablets",
+    "rx_required": false,
+    "category": "Pain Relief",
+    "thumbnail": "pill",
+    "description": "Paracetamol helps reduce fever and relieve mild to moderate pain.",
+    "uses": [
+      "Fever",
+      "Headache",
+      "Body pain"
+    ],
+    "directions": "Adults: 1 tablet every 6-8 hours as needed. Do not exceed 4 g/day.",
+    "safety": "Avoid with severe liver disease."
+  },
+  {
+    "slug": "azithromycin-500",
+    "name": "Azithromycin 500 mg",
+    "brand": "CareKart Rx",
+    "price": 119.0,
+    "mrp": 145.0,
+    "pack_size": "3 tablets",
+    "rx_required": true,
+    "category": "Antibiotics",
+    "thumbnail": "capsule",
+    "description": "Macrolide antibiotic effective against many bacterial infections.",
+    "uses": [
+      "Throat infection",
+      "Respiratory infections",
+      "Skin infections"
+    ],
+    "directions": "As prescribed by your physician only.",
+    "safety": "Prescription required. Do not self-medicate."
+  },
+  {
+    "slug": "vitamin-c-1000",
+    "name": "Vitamin C 1000 mg",
+    "brand": "CareKart Wellness",
+    "price": 199.0,
+    "mrp": 249.0,
+    "pack_size": "60 tablets",
+    "rx_required": false,
+    "category": "Vitamins & Supplements",
+    "thumbnail": "bottle",
+    "description": "High-potency Vitamin C to support immunity and antioxidant defense.",
+    "uses": [
+      "Immunity",
+      "Antioxidant support"
+    ],
+    "directions": "Take 1 tablet daily after a meal.",
+    "safety": "Consult a doctor if pregnant or nursing."
+  },
+  {
+    "slug": "bp-monitor-basic",
+    "name": "Automatic BP Monitor",
+    "brand": "CareKart Devices",
+    "price": 1399.0,
+    "mrp": 1999.0,
+    "pack_size": "1 device",
+    "rx_required": false,
+    "category": "Devices",
+    "thumbnail": "device",
+    "description": "Digital blood pressure monitor with cuff.",
+    "uses": [
+      "Blood pressure tracking"
+    ],
+    "directions": "Refer to manual.",
+    "safety": "Not a substitute for clinical diagnosis."
+  }
+]

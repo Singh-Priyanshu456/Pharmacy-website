@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" href="assets/favicon.svg"><title>Cart</title>
+  <link rel="stylesheet" href="styles.css"/><script defer src="app.js"></script>
+</head><body>
+<header class="nav"><div class="container nav__inner">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" height="40"/></a>
+  <nav class="nav__links"><a href="lab-tests.html">Lab Tests</a><a href="upload-rx.html">Upload Rx</a><a href="cart.html">Cart <span id="cartCount" class="pill">0</span></a><a id="authLink" href="login.html">Login</a></nav>
+</div></header>
+<main class="container">
+  <h1>Your Cart</h1>
+  <div id="cartItems" class="cart"></div>
+  <div class="cart__summary">
+    <div><label><input type="checkbox" id="rxCheck"/> I confirm I have a valid prescription for Rx items.</label></div>
+    <div class="cart__totals"><p>Subtotal: ₹<span id="subtotal">0</span></p><p>Discount: -₹<span id="discount">0</span></p><h3>Payable: ₹<span id="payable">0</span></h3></div>
+    <a class="btn btn--primary" href="checkout.html" onclick="return validateCheckout()">Proceed to Checkout</a>
+  </div>
+</main>
+<footer class="footer"><div class="container footer__bottom"><small>© <span id="yr"></span> CareKart</small></div></footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();document.addEventListener('DOMContentLoaded', renderCart)</script>
+</body></html>

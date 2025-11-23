@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "cbc",
+    "name": "Complete Blood Count (CBC)",
+    "price": 299.0,
+    "mrp": 599.0,
+    "report_tat": "24 hrs",
+    "prep": "No fasting required",
+    "parameters": 23
+  },
+  {
+    "slug": "fbs",
+    "name": "Fasting Blood Sugar (FBS)",
+    "price": 149.0,
+    "mrp": 299.0,
+    "report_tat": "12 hrs",
+    "prep": "8-10 hours fasting recommended",
+    "parameters": 1
+  },
+  {
+    "slug": "lipid",
+    "name": "Lipid Profile",
+    "price": 499.0,
+    "mrp": 999.0,
+    "report_tat": "24-36 hrs",
+    "prep": "10-12 hours fasting recommended",
+    "parameters": 8
+  }
+]
