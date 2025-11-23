@@ -1,4 +1,4 @@
-# CareKart – Full‑Stack Pharmacy (Demo)
+# CareKart 
 
 A complete example inspired by Tata 1mg flows: **frontend + backend + MongoDB** in one project.
 
@@ -28,5 +28,4 @@ A complete example inspired by Tata 1mg flows: **frontend + backend + MongoDB** 
 - Prescription upload (saved under `server/uploads/prescriptions`)
 - Orders list (user-scoped)
 
-> This repo is **for learning/demo**. Replace placeholder brand/data, add payment gateway, Rx validation, inventory, delivery slots, address service, etc. before any real use.
 
