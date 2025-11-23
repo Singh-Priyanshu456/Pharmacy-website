@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" href="assets/favicon.svg"><title>Admin Panel – CareKart</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="admin.js"></script>
+</head>
+<body>
+<header class="nav"><div class="container nav__inner">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" height="40"/></a>
+  <nav class="nav__links"><a href="admin.html">Admin</a><a href="index.html">Store</a></nav>
+</div></header>
+<main class="container">
+  <h1>Admin Panel</h1>
+  <section class="card" style="margin:1rem 0;padding:1rem">
+    <h3>Login as Admin</h3>
+    <p class="muted">Use the seeded credentials (default): <code>admin@carekart.local / Admin@123</code></p>
+    <form onsubmit="return adminLogin(event)">
+      <input id="aEmail" type="email" placeholder="Email" required>
+      <input id="aPass" type="password" placeholder="Password" required>
+      <button class="btn btn--primary">Login</button>
+    </form>
+  </section>
+
+  <section class="grid-2">
+    <div class="card" style="padding:1rem">
+      <h3>Products</h3>
+      <div id="pList"></div>
+      <h4>Create / Update</h4>
+      <form onsubmit="return saveProduct(event)">
+        <input id="pSlug" placeholder="slug" required>
+        <input id="pName" placeholder="name" required>
+        <input id="pBrand" placeholder="brand">
+        <input id="pPrice" type="number" step="0.01" placeholder="price">
+        <input id="pMrp" type="number" step="0.01" placeholder="mrp">
+        <input id="pPack" placeholder="pack_size">
+        <input id="pCat" placeholder="category">
+        <input id="pThumb" placeholder="thumbnail (pill/capsule/bottle/device)">
+        <textarea id="pDesc" placeholder="description"></textarea>
+        <textarea id="pUses" placeholder="uses (comma separated)"></textarea>
+        <textarea id="pDir" placeholder="directions"></textarea>
+        <textarea id="pSafe" placeholder="safety"></textarea>
+        <label><input type="checkbox" id="pRx"> Rx required</label>
+        <button class="btn btn--primary">Save Product</button>
+      </form>
+    </div>
+    <div class="card" style="padding:1rem">
+      <h3>Lab Tests</h3>
+      <div id="tList"></div>
+      <h4>Create / Update</h4>
+      <form onsubmit="return saveTest(event)">
+        <input id="tSlug" placeholder="slug" required>
+        <input id="tName" placeholder="name" required>
+        <input id="tPrice" type="number" step="0.01" placeholder="price">
+        <input id="tMrp" type="number" step="0.01" placeholder="mrp">
+        <input id="tTat" placeholder="report_tat">
+        <input id="tPrep" placeholder="prep">
+        <input id="tParams" type="number" placeholder="parameters">
+        <button class="btn btn--primary">Save Test</button>
+      </form>
+    </div>
+  </section>
+</main>
+</body>
+</html>
